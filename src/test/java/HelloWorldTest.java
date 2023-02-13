@@ -15,6 +15,10 @@ public class HelloWorldTest {
     public void helloTest(){
         String expected = "Hello, world!";
         String actual = hw.sayHello().trim();
+        extracted(expected, actual);
+    }
+
+    private void extracted(String expected, String actual) {
         Assert.assertEquals(expected,actual);
     }
 }
